@@ -1,0 +1,18 @@
+{% extends "master.html" %}
+
+{% block title %}
+  Blood Bank Management System
+{% endblock %}
+
+
+{% block content %}
+  <p><a href="/">HOME</a></p>
+
+  <h1>Donors</h1>
+
+  <ul>
+    {% for x in donors %}
+      <li><a href="details/">{{ x.name }} {{x.mobile_number}} {{x.age}} {{x.blood_group}} {{x.address}} {{x.vol_of_blood}} {{x.date}}</a></li>
+    {%endfor %}
+  </ul>
+{% endblock %}

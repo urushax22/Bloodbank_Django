@@ -1,0 +1,18 @@
+{% extends "master.html" %}
+
+{% block title %}
+    Details about {{ donor.name }}
+{% endblock %}}
+
+{% block content %}
+  <h1>{{ donor.name }}</h1>
+    <p>Phone: {{ donor.mobile_number }}</p>
+    <p>Age: {{ donor.age }}</p>
+    <p>Blood Group: {{ donor.blood_group }}</p>
+    <p>Address: {{ donor.address }}</p>
+    <p>Volume of blood donated(ml): {{ donor.vol_of_blood }}</p>
+    <p>Date of Donation: {{ donor.date }}</p>
+
+    <p>Back to <a href="/bloodbank">Donors</a></p>
+
+{% endblock %}
